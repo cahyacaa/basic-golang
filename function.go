@@ -10,7 +10,7 @@ func main() {
 
 func calculate(numbers ...int) float64 {
     var total int = 0
-    for  number := range numbers {
+    for _, number := range numbers {
         total += number
     }
 
