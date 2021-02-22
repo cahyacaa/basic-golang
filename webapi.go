@@ -22,7 +22,7 @@ var data = []student{
 func users(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Content-Type", "application/json")
 
-    if r.Method == "POST" {
+    if r.Method == "GET" {
         var result, err = json.Marshal(data)
 
         if err != nil {
