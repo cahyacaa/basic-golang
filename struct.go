@@ -1,25 +1,22 @@
-package main 
+package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-type student struct {
-	name string 
-	grade int
-	languages
+type Profile struct {
+	Name, Address, Phone string
+	Gender               int
 }
 
-type languages struct{
-	intermediate []string
-}
+func main() {
+	var user Profile
+	user.Name = "cahya"
+	user1 := Profile{
+		Name:    "cahya",
+		Address: "Sampit",
+		Phone:   "08132432432",
+		Gender:  1,
+	}
 
-func main(){
-	var s1= student{} 
-	s1.name = "Ryu Hye-Young"
-	s1.grade = 10
-	s1.intermediate = []string{"lol","lal"}
-	fmt.Println("name :", s1.name)
-	fmt.Println("grade :", s1.grade)
-	fmt.Println("languages :", s1.languages.intermediate)
+	fmt.Println(user1)
+	fmt.Println(user)
 }
