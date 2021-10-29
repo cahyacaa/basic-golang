@@ -1,5 +1,5 @@
-module hello
+module lib
 
-go 1.15
+go 1.16
 
-require go.mongodb.org/mongo-driver v1.4.6 // indirect
+require go.mongodb.org/mongo-driver v1.7.3
