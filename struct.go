@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-type Profile struct {
+type Profiles struct {
 	Name, Address, Phone string
 	Gender               int
 }
 
 func main() {
-	var user Profile
+	var user Profiles
 	user.Name = "cahya"
-	user1 := Profile{
+	user1 := Profiles{
 		Name:    "cahya",
 		Address: "Sampit",
 		Phone:   "08132432432",
