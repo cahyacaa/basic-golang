@@ -5,15 +5,13 @@ import (
 	"sync"
 )
 
-func runAsync(num int, group *sync.WaitGroup) chan int {
+func runAsync(num int, group *sync.WaitGroup) int {
 	defer group.Done()
-	out := make(chan int)
 	group.Add(1)
 	result := 1 + num
 	fmt.Println("hasil", result)
-	out <- result
 
-	return out
+	return result
 
 }
 
