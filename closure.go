@@ -7,10 +7,9 @@ func main() {
 	incrementResult := func() {
 		fmt.Println("Incrementing", counter)
 		counter++
-		const counter = "dodol"
-		fmt.Println(counter)
 	}
 	for i := 0; i < 100; i++ {
+		fmt.Println(i)
 		incrementResult()
 	}
 }
